@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040407"/>
+      <stop offset="100%" stop-color="#0f111a"/>
+    </linearGradient>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base with Cyber Border -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bgGrad)" stroke="url(#neonGrad)" stroke-width="2.5" />
+
+  <!-- Inner Tech Bracket / Hex Grid Subtle Accent -->
+  <path d="M12 20 L8 24 L8 40 L12 44" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M52 20 L56 24 L56 40 L52 44" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Brand Typography: MC -->
+  <text x="31" y="40" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-1">MC</text>
+
+  <!-- Glowing Dot -->
+  <circle cx="47" cy="38" r="3" fill="#00f2fe" filter="url(#glow)"/>
+</svg>
